@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { InputFormatterDirective } from './input-formatter.directive';
 import { ZippyComponent } from "./zippy/zippy.component";
+import { ContactFormComponent } from './contact-form/contact-form.component';
+
 
 // import { TitleCasePipe } from "./title-case.pipe";
 // import { TitleCasePipe } from '@angular/common';
@@ -13,7 +15,7 @@ import { ZippyComponent } from "./zippy/zippy.component";
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterOutlet, FormsModule, CommonModule, InputFormatterDirective, ZippyComponent]
+  imports: [RouterOutlet, FormsModule, CommonModule, InputFormatterDirective, ZippyComponent, ContactFormComponent]
 })
 export class AppComponent {
   onAdd() {
